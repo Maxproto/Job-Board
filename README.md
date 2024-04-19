@@ -2,6 +2,8 @@
 
 This project is a simple React-based web application that allows users to post job listings, edit them, and view all job opportunities in one place. Utilizing a json-server for mock backend functionality, this application simulates full-stack capabilities in a development environment.
 
+![screenshot](/public/screenshot.png "screenshot")
+
 ## Project Structure
 
 Below is a high-level overview of the project's directory structure:

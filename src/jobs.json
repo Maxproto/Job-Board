@@ -2,9 +2,9 @@
   "jobs": [
     {
       "id": "1",
-      "title": "Senior React Dev",
+      "title": "Pediatric Nurse Practitioner",
       "type": "Full-Time",
-      "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.",
+      "description": "Upper Valley Pediatrics offers comprehensive medical care from birth through young adulthood. We are a designated medical home specializing in preventive care, complex medical conditions, behavioral & psychiatric disorders, and adolescent medicine. We are willing to provide teaching and support to a new graduate to help build confidence and independence. We would also welcome a seasoned NP. Benefits include health, dental, vacation time and CME allotment. Position to start Jan 2024. Some flexibility regarding days and start date for the right candidate.",
       "location": "Boston, MA",
       "salary": "$70K - $80K",
       "company": {
@@ -16,10 +16,10 @@
     },
     {
       "id": "2",
-      "title": "Front-End Engineer (React & Redux)",
+      "title": "Electrical Apprentice",
       "type": "Full-Time",
+      "description": "Work will be performed as it applies to installation, alterations, additions and/or repairs of electrical systems, conductors and associated materials and equipment customarily installed within the commercial and industrial electrical construction industries. All work must be completed in compliance with the requirements of the National Electrical Code and other state and local building codes, as applicable. Tasks will vary depending on the apprenticeship level.\n\nThere are four (4) levels of Apprentices. At each level the Apprentice must complete 2,000 hours of electrically related work as identified in the Specific Job Responsibilities section and participate in on-the-job training. Additionally, at each level the Apprentice must attend 150 hours of formal classroom instruction each school year and achieve a minimum passing grade of 70.",
       "location": "Miami, FL",
-      "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
       "salary": "$70K - $80K",
       "company": {
         "name": "Veneer Solutions",
@@ -30,10 +30,10 @@
     },
     {
       "id": "3",
-      "title": "React.js Dev",
+      "title": "Office Manager",
       "type": "Full-Time",
+      "description": "We are looking for an Office manager to organize and coordinate administration duties and office procedures. Your role is to create and maintain a pleasant work environment, ensuring high levels of organizational effectiveness, communication and safety. The successful candidate will have multiple years of experience in the automotive industry, handling the day to day responsibilities of an office manager. The successful candidate will also have a back ground in accounting and be able to understand documents and statements related to the auto industry. Ultimately, the Office manager should be able to ensure the smooth running of the office and help to improve company procedures and day-to-day operation.",
       "location": "Brooklyn, NY",
-      "description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment where your ideas are valued.",
       "salary": "$70K - $80K",
       "company": {
         "name": "Dolor Cloud",

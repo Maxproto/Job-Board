@@ -41,7 +41,7 @@ const EditJobPage = ({updateJobSubmit}) => {
   };
 
   return (
-    <section className="bg-indigo-50">
+    <section className="bg-emerald-50">
       <div className="container m-auto max-w-2xl py-24">
         <div
           className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0"
@@ -212,7 +212,7 @@ const EditJobPage = ({updateJobSubmit}) => {
 
             <div>
               <button
-                className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
+                className="bg-emerald-800 hover:bg-emerald-900 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
                 type="submit"
               >
                 Update Job
