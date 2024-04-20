@@ -1,21 +1,21 @@
-import React from 'react'
-import { useParams, useLoaderData, useNavigate } from 'react-router-dom'
-import { FaArrowLeft, FaMapMarker } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import React from "react";
+import { useParams, useLoaderData, useNavigate } from "react-router-dom";
+import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const JobPage = ({ deleteJob }) => {
   const navigate = useNavigate();
   const { id } = useParams();
-  const job =useLoaderData();
+  const job = useLoaderData();
 
   const onDeleteClick = (jobId) => {
-    const confirm = window.confirm('Are you sure you want to delete this job?');
+    const confirm = window.confirm("Are you sure you want to delete this job?");
     if (!confirm) return;
     deleteJob(jobId);
-    toast.success('Job deleted successfully');
-    navigate('/jobs');
-  }
+    toast.success("Job deleted successfully");
+    navigate("/jobs");
+  };
 
   return (
     <>
@@ -25,7 +25,7 @@ const JobPage = ({ deleteJob }) => {
             to="/jobs"
             className="text-emerald-800 hover:text-emerald-900 flex items-center"
           >
-            <FaArrowLeft className='mr-2' /> Back to Job Listings
+            <FaArrowLeft className="mr-2" /> Back to Job Listings
           </Link>
         </div>
       </section>
@@ -34,16 +34,10 @@ const JobPage = ({ deleteJob }) => {
         <div className="container m-auto py-10 px-6">
           <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
             <main>
-              <div
-                className="bg-white p-6 rounded-lg shadow-md text-center md:text-left"
-              >
+              <div className="bg-white p-6 rounded-lg shadow-md text-center md:text-left">
                 <div className="text-gray-500 mb-4">{job.type}</div>
-                <h1 className="text-3xl font-bold mb-4">
-                  {job.title}
-                </h1>
-                <div
-                  className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start"
-                >
+                <h1 className="text-3xl font-bold mb-4">{job.title}</h1>
+                <div className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start">
                   <FaMapMarker className="text-orange-700 mr-1" />
                   <p className="text-orange-700">{job.location}</p>
                 </div>
@@ -54,11 +48,11 @@ const JobPage = ({ deleteJob }) => {
                   Job Description
                 </h3>
 
-                <p className="mb-4">
-                  {job.description}
-                </p>
+                <p className="mb-4">{job.description}</p>
 
-                <h3 className="text-emerald-800 text-lg font-bold mb-2">Salary</h3>
+                <h3 className="text-emerald-800 text-lg font-bold mb-2">
+                  Salary
+                </h3>
 
                 <p className="mb-4">{job.salary}/ Year</p>
               </div>
@@ -72,9 +66,7 @@ const JobPage = ({ deleteJob }) => {
 
                 <h2 className="text-2xl">{job.company.name}</h2>
 
-                <p className="my-2">
-                  {job.company.description}
-                </p>
+                <p className="my-2">{job.company.description}</p>
 
                 <hr className="my-4" />
 
@@ -86,7 +78,9 @@ const JobPage = ({ deleteJob }) => {
 
                 <h3 className="text-xl">Contact Phone:</h3>
 
-                <p className="my-2 bg-emerald-50 p-2 font-bold">{job.company.contactPhone}</p>
+                <p className="my-2 bg-emerald-50 p-2 font-bold">
+                  {job.company.contactPhone}
+                </p>
               </div>
 
               {/* <!-- Manage --> */}
@@ -95,9 +89,11 @@ const JobPage = ({ deleteJob }) => {
                 <Link
                   to={`/edit-job/${job.id}`}
                   className="bg-emerald-700 hover:bg-emerald-900 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-                  >Edit Job</Link
                 >
-                <button onClick={() => onDeleteClick(job.id)}
+                  Edit Job
+                </Link>
+                <button
+                  onClick={() => onDeleteClick(job.id)}
                   className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
                   Delete Job
@@ -109,12 +105,12 @@ const JobPage = ({ deleteJob }) => {
       </section>
     </>
   );
-}
+};
 
-const jobLoader = async({params}) => {
+const jobLoader = async ({ params }) => {
   const res = await fetch(`/api/jobs/${params.id}`);
   const data = await res.json();
   return data;
-}
+};
 
 export { JobPage as default, jobLoader };
